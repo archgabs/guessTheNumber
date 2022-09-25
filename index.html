@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guess The Number</title>
+        <link rel="stylesheet" href="cfgFiles/style.css" />
+        <link rel="shortcut icon" href="assets/icon/favicon.svg" type="image/x-icon">
+    </head>
+    <body>
+        <div class="mainApp flex-center">
+            <header class="flex-center">
+                <h1 class="app-title">Guess The Number!</h1>
+            </header>
+            <main>
+                <span class="resultNumber flex-center">?</span>
+                <div
+                    style="flex-flow: wrap column"
+                    class="inputField flex-center"
+                >
+                    <input
+                        placeholder="Enter a Guess"
+                        type="text"
+                        inputmode="numeric"
+                        name="numberInput"
+                        class="numberInput"
+                    />
+                    <div>
+                        <button class="btn btn-guess">Guess</button>
+                        <button class="btn btn-open">Open</button>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <span class="response">Waiting Guess</span>
+            </footer>
+        </div>
+        <aside class="asideApp flex-center hidden">
+            <p class="asideText">
+                Score: <span class="score asideText">20</span>
+            </p>
+            <p class="asideText">
+                Highscore: <span class="highscore asideText">0</span>
+            </p>
+            <div>
+                <button class="btn asideBtn">Again</button>
+                <button class="btn closeBtn">Close</button>
+            </div>
+        </aside>
+        <script src="cfgFiles/script.js"></script>
+    </body>
+</html>
