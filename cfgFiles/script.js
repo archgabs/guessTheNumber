@@ -64,3 +64,20 @@ const isNumberEqual = (input) => {
         }
     }
 };
+
+// Modal Functionality
+
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+
+const leaveModal = () => {
+    modal.classList.add('hidden-modal');
+    overlay.classList.add('hidden-modal');
+};
+
+overlay.addEventListener('click', leaveModal);
+document.addEventListener('keydown', (documentObject) => {
+    if (documentObject.key === 'Escape') {
+        leaveModal();
+    }
+});
