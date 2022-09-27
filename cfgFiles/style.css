@@ -109,12 +109,15 @@ body {
     .mainApp {
         width: 365px;
     }
+    .modal {
+        max-width: 300px;
+    }
 }
 
 /* Modal */
 
 .modal {
-    max-width: 400px;
+    width: 400px;
     padding: 1rem;
     border-radius: 0.7rem;
     background-color: #f7f7f7;
